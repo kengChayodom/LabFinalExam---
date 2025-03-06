@@ -106,6 +106,13 @@ docker run --name mapping -p 8080:80 -v /var/www/html:/usr/share/nginx/html -d n
 docker compose up -d
 ```
 
+```
+services:
+  web:
+    image: kengchayodom/test
+    ports:
+      - "8105:80"
+```
 10.Create a new HTML file in the VM, Write your docker-compose.yml to run your image,
 and map the volume to your new HTML file, and show the output.
 
