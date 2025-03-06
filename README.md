@@ -39,6 +39,7 @@ sudo sh get-docker.sh
 //download docker
 
 sudo usermod -aG docker ubuntu
+exit then login again
 
 docker container run hello-world
 ```
