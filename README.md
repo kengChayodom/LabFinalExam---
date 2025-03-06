@@ -91,6 +91,10 @@ docker run -p 8101:80 kengchayodom/labtesttest
 
 ```
 docker run --name {name ละก็เอา {} ออกด้วย} -p 8080:80 -v /var/www/html:/usr/share/nginx/html -d nginx
+
+หรือก็คือ
+
+docker run --name mapping -p 8080:80 -v /var/www/html:/usr/share/nginx/html -d nginx
 ```
 
 
