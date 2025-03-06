@@ -19,13 +19,13 @@ systemctl status nginx
 ![image](https://github.com/user-attachments/assets/4f39ee4a-de88-4785-b919-c25beb11f35a)
 
 ```
-cd /var/www/html
 
 sudo usermod -aG root ubuntu
 sudo chmod -R 775 /var/www/html
 
 exit => login again
 
+cd /var/www/html
 touch index.html
 vi index.html
 
