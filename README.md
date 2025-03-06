@@ -34,6 +34,9 @@ then test
 4. Install Docker in the virtual machine, and call the hello-world image to run
 ![image](https://github.com/user-attachments/assets/8d59d92d-64b4-46de-b603-947d905c899d)
 ```
+cd ~ //back to root ก่อน
+
+
 curl -fsSL https://get.docker.com/ -o get-docker.sh
 sudo sh get-docker.sh
 //download docker
