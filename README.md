@@ -84,7 +84,13 @@ docker run -p 8101:80 kengchayodom/labtesttest
 ```
 
 8. With your Docker image, map the volume of your container to show the website youhave done on question no. 3
+```
+docker run --name {name ละก็เอา {} ออกด้วย} -p 8080:80 -v /var/www/html:/usr/share/nginx/html -d nginx
+```
 
-
+9. The proctor will provide docker-compose.yml file, run the given docker-compose.yml and show the output in the browser
+```
+docker compose up -d
+```
 
 10. Push the image you have created to your Docker Hub
