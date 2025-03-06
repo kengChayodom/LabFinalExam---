@@ -50,8 +50,41 @@ docker run -p 8100:80 nginx
 ```
 
 6. The proctor will send you the HTML file, create a new image to show the HTML file you received, and then run the container to show the output image in the VM
+![image](https://github.com/user-attachments/assets/a1fe4ba2-825d-4851-9ae8-010bd8bd2b62)
+
+create Dockerfile
 ```
+FROM nginx:latest
+
+COPY ./html /usr/share/nginx/html
+
+EXPOSE 80
+```
+
+build docker 
+```
+docker build -t kengchayodom/labtesttest .
+```
+
+7. Push the image you have created to your Docker Hub
+```
+docker push kengchayodom/labtesttest
+```
+
+back to 6 run the container to show the output image in the VM
+![image](https://github.com/user-attachments/assets/24baec33-3bd0-4fa4-951c-a4025e036a3e)
+
+```
+in vm
+
+docker pull kengchayodom/labtesttest
+
+docker run -p 8101:80 kengchayodom/labtesttest
 
 ```
 
-8. Push the image you have created to your Docker Hub
+8. With your Docker image, map the volume of your container to show the website youhave done on question no. 3
+
+
+
+10. Push the image you have created to your Docker Hub
