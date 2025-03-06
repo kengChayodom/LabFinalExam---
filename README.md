@@ -44,7 +44,7 @@ exit then login again
 docker container run hello-world
 ```
 5. Run the Docker image Nginx and show the default page
-
+![image](https://github.com/user-attachments/assets/3e98e76c-14c8-49d9-8bd0-ebbf00665498)
 ```
 docker run -p 8100:80 nginx
 ```
