@@ -50,6 +50,9 @@ docker run -p 8100:80 nginx
 ```
 
 6. The proctor will send you the HTML file, create a new image to show the HTML file you received, and then run the container to show the output image in the VM
+
+File structure ![image](https://github.com/user-attachments/assets/bc3ddceb-b864-4951-9293-bf9cb2f2388b)
+
 ![image](https://github.com/user-attachments/assets/a1fe4ba2-825d-4851-9ae8-010bd8bd2b62)
 
   create Dockerfile
