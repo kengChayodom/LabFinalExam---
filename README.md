@@ -1,4 +1,4 @@
-# LabFinalExam---
+![image](https://github.com/user-attachments/assets/1038cdf7-1d5d-4dca-a132-825c967d935c)# LabFinalExam---
 
 1. Create a virtual machine
 ```
@@ -87,9 +87,12 @@ docker run -p 8101:80 kengchayodom/labtesttest
 ```
 
 8. With your Docker image, map the volume of your container to show the website youhave done on question no. 3
+![image](https://github.com/user-attachments/assets/0f4e192d-c5b8-4179-8424-8a2ba798eb49)
+
 ```
 docker run --name {name ละก็เอา {} ออกด้วย} -p 8080:80 -v /var/www/html:/usr/share/nginx/html -d nginx
 ```
+
 
 9. The proctor will provide docker-compose.yml file, run the given docker-compose.yml and show the output in the browser
 ```
@@ -150,4 +153,5 @@ docker compose up -d
 ```
 
 open ip with port in docker-compose ##can change port when port is already allocated
+![image](https://github.com/user-attachments/assets/11e351bd-14bd-4533-9996-4cb56f5d3e0f)
 
