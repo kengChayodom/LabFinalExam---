@@ -93,7 +93,7 @@ docker run -p 8101:80 kengchayodom/labtesttest
 ![image](https://github.com/user-attachments/assets/0f4e192d-c5b8-4179-8424-8a2ba798eb49)
 
 ```
-docker run --name {name ละก็เอา {} ออกด้วย} -p 8080:80 -v /var/www/html:/usr/share/nginx/html -d nginx
+docker run --name {ตั้งชื่าตรงนี้ละก็เอา {} ออกด้วยเช่นตัวอย่างด้านล่างตั้งชื่อว่าmapping} -p 8080:80 -v /var/www/html:/usr/share/nginx/html -d nginx
 
 หรือก็คือ
 
