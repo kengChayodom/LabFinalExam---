@@ -99,3 +99,55 @@ docker compose up -d
 10.Create a new HTML file in the VM, Write your docker-compose.yml to run your image,
 and map the volume to your new HTML file, and show the output.
 
+//back to root folder
+```
+cd ~ 
+```
+
+
+create new file html
+```
+touch newindex.html
+```
+
+
+edit file html and write something
+```
+nano newindex.html
+```
+
+check file html
+
+```
+ cat newindex.html
+```
+create docker-compose.html
+
+```
+touch docker-compose.yml
+```
+edit file docker-compose
+```
+nano docker-compose.yml
+```
+
+
+put this 
+```
+version: '3'
+services:
+  web:
+    image: nginx
+    container_name: my-nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./newindex.html:/usr/share/nginx/html/index.html
+```
+then 
+```
+docker compose up -d
+```
+
+open ip with port in docker-compose ##can change port when port is already allocated
+
